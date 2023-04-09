@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Videos from "../components/Videos.astro";
 ---
 
 <!DOCTYPE html>
@@ -12,10 +13,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
+		<h1>Sitio Oficial de la Tanque Gang</h1>
+		
 		<main>
-			
+			<Videos/>	
 		</main>
 		<Footer />
 	</body>
 </html>
- 
+ <style>
+	h1{
+		text-align: center;
+		
+	}
+ </style>
